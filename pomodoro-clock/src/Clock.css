@@ -1,0 +1,56 @@
+/* Overall styles */
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+ 
+
+  
+}
+body {
+  background: url('img/multicolored-sparkles.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 20px;
+}
+
+.clock-container{
+  width: 400px;
+  height: 500px;
+  /* background: rgba(255, 255, 255, 0.7); */
+  background-color: white;
+}
+
+
+/* Individual styles */
+div {
+  text-align: center;
+}
+
+#time-left, #break-label, #session-label {
+  margin: 5px;
+  padding: 5px;
+}
+#start_stop, #stop, #reset, .plus, .minus {
+    padding: 10px;
+    color: white;
+    background-color: lightblue;
+}
+.plus, .minus {
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Hover styles */
+div:hover {
+  cursor: context-menu;
+}
+#start_stop:hover, #stop:hover, #reset:hover, .plus:hover, .minus:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
